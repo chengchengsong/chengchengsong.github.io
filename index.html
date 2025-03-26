@@ -4,111 +4,277 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="google-site-verification" content="D6prsuEHzGdHbu50KLcQvr6tq4my_wtdg0Db48lYAUI" />
     <title>Chengcheng Song 宋乘成</title>
+
     <meta name="author" content="Chengcheng Song">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/happy.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
     <style>
-      body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #f9f9f9;
-        color: #333;
-      }
-      
-      .container {
-        text-align: center;
-        max-width: 600px;
-        padding: 2rem;
-        border-radius: 10px;
-        background-color: white;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-      }
-      
-      .avatar {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-bottom: 20px;
-        border: 4px solid #fff;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      }
-      
-      h1 {
-        margin: 0 0 1rem 0;
-        font-size: 2.2rem;
-        font-weight: 500;
-      }
-      
-      .subtitle {
-        color: #666;
-        margin-bottom: 2rem;
-      }
-      
-      .language-selector {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        margin-top: 30px;
-      }
-      
-      .language-btn {
-        padding: 12px 30px;
-        font-size: 1rem;
-        background-color: #ffffff;
+      .pdf-link {
+        display: inline-block;
         color: #2196F3;
-        border: 2px solid #2196F3;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        display: flex;
-        align-items: center;
-        gap: 8px;
+        margin-left: 8px;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 0.85em;
+        font-weight: 500;
         text-decoration: none;
+        background-color: rgba(33, 150, 243, 0.1);
+        transition: all 0.3s ease;
       }
       
-      .language-btn:hover {
-        background-color: #2196F3;
-        color: white;
-        transform: translateY(-2px);
-        box-shadow: 0 4px 8px rgba(33, 150, 243, 0.3);
+      .pdf-link:hover {
+        background-color: rgba(33, 150, 243, 0.2);
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       }
-      
-      .language-btn:active {
+
+      .pdf-link:active {
         transform: translateY(0);
+        box-shadow: none;
       }
     </style>
   </head>
 
   <body>
-    <div class="container">
-      <img src="images/chengchengsong.png" alt="Chengcheng Song" class="avatar">
-      <h1>Chengcheng Song 宋乘成</h1>
-      <p class="subtitle">欢迎访问我的个人网站 / Welcome to my personal website</p>
-      
-      <div class="language-selector">
-        <a href="zh.html" class="language-btn" onclick="setLanguagePreference('zh')">
-          <i class="fas fa-globe-asia"></i> 中文
-        </a>
-        <a href="en.html" class="language-btn" onclick="setLanguagePreference('en')">
-          <i class="fas fa-globe-americas"></i> English
-        </a>
-      </div>
-    </div>
-    
-    <script>
-      // 自动根据浏览器语言设置跳转到相应页面
-      document.addEventListener('DOMContentLoaded', function() {
-        const userLang = navigator.language || navigator.userLanguage;
-        // 如果有cookie记录了用户的语言选择，则优先使用
-        const savedLang = getCookie('preferredLanguage');
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Chengcheng Song (宋乘成)
+                </p>
+                <p>
+                  I am a doctoral student at the College of Civil Engineering, Hunan University. My advisor is 
+                  <a href="http://grzy.hnu.edu.cn/site/index/chenyixing" target="_blank">Professor Yixing Chen</a>. Currently, I am involved in the development of the core software 
+                  <a href="https://doi.org/10.1016/j.enbuild.2023.112794" target="_blank">AutoBPS</a> for our research group and am committed to providing open-source methods for urban building information acquisition.
+                </p>
+                <p style="text-align:center" class="social-links">
+                  <a href="mailto:chengchengsong@hnu.edu.cn" class="icon-link" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                  </a> &nbsp;/&nbsp;
+                  <a href="pdfs/cv_en.pdf" class="icon-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>CV</span>
+                  </a> &nbsp;/&nbsp;
+                  <a href="pdfs/cv_zh.pdf" class="icon-link" target="_blank">
+                    <i class="fas fa-file-contract"></i>
+                    <span>简历</span>
+                  </a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=mYKjYPIAAAAJ" class="icon-link" target="_blank">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Scholar</span>
+                  </a> &nbsp;/&nbsp;
+                  <a href="https://www.researchgate.net/profile/Chengcheng-Song-10" class="icon-link" target="_blank">
+                    <i class="fab fa-researchgate"></i>
+                    <span>ResearchGate</span>
+                  </a> &nbsp;/&nbsp;
+                  <a href="https://gitee.com/voicelink" class="icon-link" target="_blank">
+                    <i class="fab fa-git-alt"></i>
+                    <span>Gitee</span>
+                  </a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:37%;max-width:37%">
+                <a href="images/chengchengsong.png"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/chengchengsong.png" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+                 <!-- News Section -->
+                 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                  <tr>
+                    <td style="padding:16px;width:100%;vertical-align:middle">
+                      <h2>News</h2>
+                    </td>
+                  </tr>
+                </tbody></table>
+                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                  <tr>
+                    <td style="padding:16px;width:100%;vertical-align:middle">
+                      <div style="max-height: 200px; overflow-y: auto; border-radius: 8px; padding-right: 10px; border: 1px solid #eaeaea; background-color: #fafafa;">
+                        <ul style="margin-top:8px;margin-bottom:8px;padding-left:20px;">
+                          <li style="margin-bottom:10px;">
+                            <strong>[2025/03]</strong> Our paper "Developing urban building energy models for shanghai city with multi-source open data" has been recognized as <strong>Highly Cited Paper</strong> in Web of Science!
+                          </li>
+                          <li style="margin-bottom:10px;">
+                            <strong>[2025/03]</strong> Our paper "Demand Flexibility of Pre-Cooling Strategies for City-Scale Buildings Through Urban Building Energy Modeling" was published in <em>Buildings</em>.
+                          </li>
+                          <li style="margin-bottom:10px;">
+                            <strong>[2025/03]</strong> Our paper "CityEL: A web-based platform to support city-scale building energy efficiency based on AutoBPS" was published in <em>Sustainable Cities and Society</em>.
+                          </li>
+                          <li style="margin-bottom:10px;">
+                            <strong>[2025/01]</strong> Our paper "UAV-BIM-BEM: An automatic unmanned aerial vehicles-based building energy model generation platform" was published in <em>Energy and Buildings</em>.
+                          </li>
+                          <li style="margin-bottom:10px;">
+                            <strong>[2024/10]</strong> Our paper "A review of current research on occupant-centric control for improving comfort and energy efficiency" was published in <em>Building Simulation</em>.
+                          </li>
+                          <li style="margin-bottom:10px;">
+                            <strong>[2024/04]</strong> Our paper "Developing urban building energy models for shanghai city with multi-source open data" was published in <em>Sustainable Cities and Society</em>.
+                          </li>
+                          <li style="margin-bottom:10px;">
+                            <strong>[2024/03]</strong> Our paper "Analysis of Peak Demand Reduction and Energy Saving in a Mixed-Use Community through Urban Building Energy Modeling" was published in <em>Energies</em>.
+                          </li>
+                          <li style="margin-bottom:10px;">
+                            <strong>[2024/02]</strong> Our paper "Economic analysis of rooftop photovoltaics system under different shadowing conditions for 20 cities in China" was published in <em>Building Simulation</em>.
+                          </li>
+                          <li style="margin-bottom:10px;">
+                            <strong>[2023/10]</strong> Our paper "Enhanced Operation of Ice Storage System for Peak Load Management in Shopping Malls across Diverse Climate Zones" was published in <em>Sustainability</em>.
+                          </li>
+                          <li style="margin-bottom:10px;">
+                            <strong>[2023/09]</strong> Our paper "An emergency aircraft evacuation simulation considering passenger overtaking and luggage retrieval" was published in <em>Reliability Engineering & System Safety</em>.
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody></table>
+          
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  🌟 <strong>Research Interests:</strong> My research focuses on <strong>Urban Building Energy Modeling (UBEM)</strong>, pedestrian evacuation, building energy, remote sensing, and artificial intelligence. I am primarily dedicated to leveraging artificial intelligence and remote sensing technologies to obtain foundational information for large-scale modeling.  
+                </p>
+                <p>
+                  🛠️ <strong>Skills & Tools:</strong> I am proficient in a variety of professional software and tools, including:  
+                  <a href="https://www.typescriptlang.org/" target="_blank"><strong>TypeScript</strong></a>, 
+                  <a href="https://cesium.com/" target="_blank"><strong>Cesium</strong></a>, 
+                  <a href="https://www.python.org/" target="_blank"><strong>Python</strong></a>, 
+                  <a href="https://www.ruby-lang.org/" target="_blank"><strong>Ruby</strong></a>, 
+                  <a href="https://www.anylogic.com/" target="_blank"><strong>AnyLogic</strong></a>, 
+                  <a href="https://www.latex-project.org/" target="_blank"><strong>LaTeX</strong></a>, 
+                  <a href="https://energyplus.net/" target="_blank"><strong>EnergyPlus</strong></a>, 
+                  <a href="https://www.esri.com/en-us/arcgis/about-arcgis/overview" target="_blank"><strong>ArcGIS</strong></a>, 
+                  and <a href="https://qgis.org/" target="_blank"><strong>QGIS</strong></a>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Publications</h2>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- Journal Papers -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h3>📚 Selected Papers</h3>
+              </td>
+            </tr>
+          </tbody></table>
+          
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="cityel_stop()" onmouseover="cityel_start()">
+              <td style="padding:20px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='cityel_image'>
+                    <img src='images/cityel.png' width=100%>
+                  </div>
+                  <img src='images/cityel.png' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function cityel_start() {
+                    document.getElementById('cityel_image').style.opacity = "1";
+                    document.getElementById('cityel_image').style.transition = "opacity 0.3s ease-in-out";
+                  }
+                  function cityel_stop() {
+                    document.getElementById('cityel_image').style.opacity = "0";
+                  }
+                  cityel_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:80%;vertical-align:middle">
+            
+                  <a class="papertitle" href="https://doi.org/10.1016/j.scs.2025.106147" target="_blank">CityEL: A web-based platform to support city-scale building energy efficiency based on AutoBPS</a>
+                  <a href="pdfs/cityel-2025.pdf" class="pdf-link" target="_blank">[PDF]</a>
+
+                <br>
+                <strong>Chengcheng Song</strong>, Jingjing Yang, Zhiyuan Wang, Ruoheng Li, Xiufeng Pang, Yixing Chen*
+                <br>
+                <em>Sustainable Cities and Society</em>, 2025.   <strong>  (JCR Q1, IF=10.5)</strong> 
+                <br>
+                <p>
+                  CityEL (City Energy Lab) is a web-based platform for urban building energy efficiency. Unlike traditional UBEM tools, it focuses on rapid modeling and neighborhood-scale analysis, using GIS and AutoBPS to streamline energy benchmarking, retrofit evaluation, and cost analysis.  </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="cityel_stop()" onmouseover="cityel_start()">
+              <td style="padding:20px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='cityel_image'>
+                    <img src='images/ubem-shanghai.png' width=100%>
+                  </div>
+                  <img src='images/ubem-shanghai.png' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function cityel_start() {
+                    document.getElementById('cityel_image').style.opacity = "1";
+                    document.getElementById('cityel_image').style.transition = "opacity 0.3s ease-in-out";
+                  }
+                  function cityel_stop() {
+                    document.getElementById('cityel_image').style.opacity = "0";
+                  }
+                  cityel_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:80%;vertical-align:middle">
+            
+                  <a class="papertitle" href="https://doi.org/10.1016/j.scs.2024.105425" target="_blank">Developing urban building energy models for shanghai city with multi-source open data</a>
+                  <a href="pdfs/ubem-shanghai-2024.pdf" class="pdf-link" target="_blank">[PDF]</a>
+
+                <br>
+                <strong>Chengcheng Song</strong>, Zhang Deng, Wenxian Zhao, Yue Yuan, Mengyue Liu, Shen Xu,  Yixing Chen*
+                <br>
+                <em>Sustainable Cities and Society    </em>, 2024. <strong>  (JCR Q1, IF=10.5) </strong>
+                <br>
+                <p>
+                  This study integrates open data to model Shanghai's building energy use, covering 609,000 footprints. Using machine learning, 63 building prototypes were classified with 95% accuracy, and energy simulations aligned with benchmarks. The approach improves urban energy modeling for sustainability planning.            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="cityel_stop()" onmouseover="cityel_start()">
+              <td style="padding:20px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='cityel_image'>
+                    <img src='images/evacuation.gif' width=100%>
+                  </div>
+                  <img src='images/evacuation.gif' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function cityel_start() {
+                    document.getElementById('cityel_image').style.opacity = "1";
+                    document.getElementById('cityel_image').style.transition = "opacity 0.3s ease-in-out";
+                  }
+                  function cityel_stop() {
+                    document.getElementById('cityel_image').style.opacity = "0";
+                  }
+                  cityel_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:80%;vertical-align:middle">
+            
+                  <a class="papertitle" href="https://doi.org/10.1016/j.scs.2025.106147" target="_blank">An emergency aircraft evacuation simulation considering passenger overtaking and luggage retrieval</a>
+                  <a href="pdfs/evacuation.pdf" class="pdf-link" target="_blank">[PDF]</a>
+
+                <br>
+                <strong>Chengcheng Song</strong>, Quan Shao*, Pei Zhu, Min Dong, Wenfei Yu
+                <br>
+                <em>Reliability Engineering & System Safety</em>, 2023.   <strong>  (JCR Q1, IF=9.4) </strong>
+                <br>
+                <p>
+                  This study models cabin evacuation with cellular automata, analyzing how luggage retrieval and overtaking behaviors impact efficiency. Results show luggage retrieval hinders evacuation most, but effective crew guidance can improve safety.
         
               </td>
             </tr>
@@ -206,7 +372,7 @@
                     <a href="pdfs/air-conditioning-2023.pdf" class="pdf-link" target="_blank">[PDF]</a>
                     <br>
                     Y Yuan, Y Chen*, <strong>C Song</strong>, Y He<br>
-                    <em>Building Simulation</em>, 18, 8-15, 2023. Conference Paper .
+                    <em>Building Simulation</em>, 18, 8-15, 2023. Conference Paper.
                   </li>
                 
 
