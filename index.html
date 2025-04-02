@@ -110,24 +110,156 @@
         // 如果有cookie记录了用户的语言选择，则优先使用
         const savedLang = getCookie('preferredLanguage');
         
-        if (savedLang) {
-          window.location.href = savedLang === 'zh' ? 'zh.html' : 'en.html';
-        } else if (userLang.startsWith('zh')) {
-          window.location.href = 'zh.html';
-        } else {
-          window.location.href = 'en.html';
-        }
-      });
-      
-      function getCookie(name) {
-        const value = `; ${document.cookie}`;
-        const parts = value.split(`; ${name}=`);
-        if (parts.length === 2) return parts.pop().split(';').shift();
-      }
-      
-      function setLanguagePreference(lang) {
-        document.cookie = `preferredLanguage=${lang}; path=/; max-age=${60*60*24*365}`;
-      }
-    </script>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- Other Journal Papers -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h3>📑 Other Publications</h3>
+                <ul class="publications-list">
+                  <li>
+                    Demand Flexibility of <strong>Pre-Cooling</strong> Strategies for City-Scale Buildings Through Urban Building Energy Modeling
+                  </a>
+                  <a href="pdfs/pre-cooling-anni-2025.pdf" class="pdf-link" target="_blank">[PDF]</a>
+                  <br>
+                  A Xu, <strong>C Song</strong>, W Zhao, Y Chen*
+                  <em>Buildings</em>, 15(7), 1051, 2025. <strong>(JCR Q2, IF=3.1)</strong>
+                </li>
+                  <li>
+                      <strong>UAV-BIM-BEM:</strong> An automatic unmanned aerial vehicles-based building energy model generation platform
+                    </a>
+                    <a href="pdfs/uav-bim-bem-2025.pdf" class="pdf-link" target="_blank">[PDF]</a>
+                    <br>
+                    H Guo, Z Chen, X Chen, J Yang, <strong>C Song</strong>, Y Chen*<br>
+                    <em>Energy and Buildings</em>, 328, 115120, 2025. <strong>(JCR Q1/Q2, IF=6.6)</strong>
+                  </li>
+                  <li>
+                    An <strong>occupant-centric control</strong> case study based on internet of things and data mining for an office space
+                </a>
+                <a href="pdfs/occ-yuan-2025.pdf" class="pdf-link" target="_blank">[PDF]</a>
+                <br>
+                Y Yuan, <strong>C Song</strong>, K Zeng, L Gao, Y Huang,  Y Chen*<br>
+                <em>Journal of Building Engineering</em>, 101, 111925, 2025. <strong>(JCR Q1, IF=6.7)</strong>
+              </li>
+
+                  <li>
+                    <strong>Analysis of Peak Demand Reduction and Energy Saving</strong> in a Mixed-Use Community through Urban Building Energy Modeling
+                    <a href="pdfs/peak-demand-2024.pdf" class="pdf-link" target="_blank">[PDF]</a>
+                    <br>
+                    W Zhao, Z Deng, Y Ji, <strong>C Song</strong>, Y Yuan, Z Wang, Y Chen*<br>
+                    <em>Energies</em>, 17(5), 1214, 2024. <strong>(JCR Q3, IF=2.99)</strong>
+                  </li>
+
+                  <li>
+                    <strong>A review of current researchon occupant-centric control </strong>  for improving comfort and energy efficiency
+                    <a href="pdfs/occupant-centric-2024.pdf" class="pdf-link" target="_blank">[PDF]</a>
+                    <br>
+                    Y Yuan, <strong>C Song</strong>, L Gao, K Zeng, Y Chen*<br>
+                    <em>Building Simulation</em>, 17(10), 1675-1692, 2024.  <strong>(JCR Q1, IF=6.1)</strong>
+                  </li>
+
+                  <li>
+                    <strong>Economic analysis of rooftop photovoltaics system</strong> under different shadowing conditions for 20 cities in China
+                    <a href="pdfs/rooftop-pv-2024.pdf" class="pdf-link" target="_blank">[PDF]</a>
+                    <br>
+                    Z Ren, Y Chen*, <strong>C Song</strong>, M Liu, A Xu, Q Zhang<br>
+                    <em>Building Simulation</em>, 17(2), 235-252, 2024 <strong>(JCR Q1, IF=6.1)</strong>
+                  </li>
+
+                  <li>
+                    <strong>Enhanced Operation of Ice Storage System</strong> for Peak Load Management in Shopping Malls across Diverse Climate Zones
+                    <a href="pdfs/ice-storage-2023.pdf" class="pdf-link" target="_blank">[PDF]</a>
+                    <br>
+                    F Su, Z Wang, Y Yuan, <strong>C Song</strong>, K Zeng, Y Chen*, R Zhang<br>
+                    <em>Sustainability</em>, 15(20), 14759, 2023. <strong>(JCR Q2/Q3, IF=3.3)</strong>
+                  </li>
+
+                  <li>
+                    <strong>Rapid Building Energy Modeling</strong> Using Prototype Model and Automatic Model Calibration for Retrofit Analysis with Uncertainty
+                    <a href="pdfs/rapid-bem-2023.pdf" class="pdf-link" target="_blank">[PDF]</a>
+                    <br>
+                    Y Chen*, W Wei, <strong>C Song</strong>, Z Ren, Z Deng<br>
+                    <em>Buildings</em>, 13(6), 1427, 2023. <strong>(JCR Q2, IF=3.1)</strong>
+                  </li>
+
+                  <li>
+                    An Adaptive Airspace Model for Quadcopters in <strong>Urban Air Mobility</strong>
+                    <a href="pdfs/safe-uav-2023.pdf" class="pdf-link" target="_blank">[PDF]</a>
+                    <br>
+                    Q Shao*; R Li; M Dong; <strong>C Song</strong><br>
+                    <em>IEEE Transactions on Intelligent Transportation Systems</em>, 2, 1702-1711, 2022. <strong>(JCR Q1, IF=7.9)</strong>
+                  </li>
+
+                  <li>
+                    <strong>Assessing the Potential of Open Data</strong> for Expanding the Urban Building Dataset: A case study in Huangpu District, Shanghai
+                    <a href="pdfs/open-data-2023.pdf" class="pdf-link" target="_blank">[PDF]</a>
+                    <br>
+                    <strong>C Song</strong>, Y Chen*, Z Deng, Y Yuan<br>
+                    <em>Building Simulation</em>, 18, 900-907, 2023. Conference Paper.
+                  </li>
+
+                  <li>
+                    <strong>Investigation on air-conditioning energy usage</strong> in educational office buildings based on sensing and clustering
+                    <a href="pdfs/air-conditioning-2023.pdf" class="pdf-link" target="_blank">[PDF]</a>
+                    <br>
+                    Y Yuan, Y Chen*, <strong>C Song</strong>, Y He<br>
+                    <em>Building Simulation</em>, 18, 8-15, 2023. Conference Paper .
+                  </li>
+                
+
+                </ul>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- Conference Papers -->
+          <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h3>🎯 Conference Papers</h3>
+              </td>
+            </tr>
+          </tbody></table>
+          
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="conf_stop()" onmouseover="conf_start()">
+              <td style="padding:20px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='conf_image'>
+                    <img src='images/conf_after.png' width=100%>
+                  </div>
+                  <img src='images/conf_before.png' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function conf_start() {
+                    document.getElementById('conf_image').style.opacity = "1";
+                    document.getElementById('conf_image').style.transition = "opacity 0.3s ease-in-out";
+                  }
+                  function conf_stop() {
+                    document.getElementById('conf_image').style.opacity = "0";
+                  }
+                  conf_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:80%;vertical-align:middle">
+                <a href="会议论文链接">
+                  <span class="papertitle">会议论文标题</span>
+                </a>
+                <br>
+                <strong>Chengcheng Song</strong>, Other Authors
+                <br>
+                <em>Conference Name</em>, 2024
+                <br>
+                <p>会议论文简介</p>
+              </td>
+            </tr>
+          </tbody></table> -->
+  </table>
+  <div style="width:100%;text-align:center;margin:20px 0;">
+    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=600&t=tt&d=4iJniGDk4dWK49GFsWzJGB--4J8lM52adfKUPPeoRnU&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353'></script>
+  </div>
   </body>
 </html>
