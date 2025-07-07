@@ -420,6 +420,20 @@ This work develops an urban building energy modeling (UBEM) framework that integ
               </td>
             </tr>
           </tbody></table>
+          <script src="js/live2d.js"></script>
+          <!-- 添加live2d模型 -->
+          <canvas class="live2d" id="live2d" width="300" height="800"></canvas>
+          <script>
+            // 初始化live2d模型
+          loadlive2d("live2d", "model/wanko/wanko.model.json");
+          </script>
+          <style>
+    .live2d {
+        position: fixed;
+        bottom : 0;
+        right : 0;
+    }
+</style>
 
           <!-- Conference Papers -->
           <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
