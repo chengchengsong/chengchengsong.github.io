@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>离线传字 · QR Code</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="vendor/qrcode.js" defer></script>
+  <script src="vendor/fflate.js" defer></script>
+  <script src="protocol.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div class="eyebrow"><span class="mark" aria-hidden="true">▦</span> QR TRANSFER <span class="badge">本地处理</span></div>
+      <h1>让文字，穿过屏幕。</h1>
+      <p class="intro">粘贴长文字，循环显示二维码。用离线传字工具扫描，自动拼回完整内容。</p>
+    </header>
+    <div class="workspace">
+      <section class="editor panel" aria-labelledby="input-title">
+        <div class="section-heading"><h2 id="input-title"><span>01</span> 输入文字</h2><button id="clear" class="text-button" type="button">清空</button></div>
+        <label class="sr-only" for="text">需要传输的文字</label>
+        <textarea id="text" placeholder="在这里粘贴文字…&#10;&#10;中文、英文、代码和换行都可以。" spellcheck="false" autocomplete="off"></textarea>
+        <div class="input-meta"><span id="size">0 字符 · 0 B</span><span>最多 2 MB</span></div>
+        <div class="settings">
+          <label for="speed">切换间隔</label>
+          <select id="speed"><option value="400">0.4 秒 / 片</option><option value="800" selected>0.8 秒 / 片</option><option value="1200">1.2 秒 / 片</option><option value="2000">2 秒 / 片（更易扫描）</option><option value="3000">3 秒 / 片</option></select>
+        </div>
+        <button id="generate" class="primary" type="button">生成并播放 <span aria-hidden="true">↗</span></button>
+        <p id="message" class="message" role="status" aria-live="polite">文字只在当前浏览器处理，不上传、不自动保存。</p>
+      </section>
+      <section class="viewer panel" id="viewer" aria-labelledby="output-title">
+        <div class="section-heading"><h2 id="output-title"><span>02</span> 扫描传输</h2><button id="fullscreen" class="text-button" type="button" disabled>放大显示</button></div>
+        <div class="qr-stage" id="stage">
+          <div id="empty"><div class="empty-symbol" aria-hidden="true">▦</div><strong>二维码将在这里出现</strong><p>准备好文字后，点击「生成并播放」</p></div>
+          <canvas id="qr" hidden aria-label="传输二维码"></canvas>
+        </div>
+        <div class="playback-meta"><strong id="frame">等待生成</strong><span id="state">尚未开始</span></div>
+        <progress id="progress" value="0" max="1" aria-label="当前轮播进度"></progress>
+        <div class="controls"><button id="previous" type="button" disabled aria-label="上一片">← 上一片</button><button id="play" type="button" disabled>暂停</button><button id="next" type="button" disabled aria-label="下一片">下一片 →</button></div>
+        <p class="viewer-tip" id="transfer-info">保持二维码完整入镜；漏扫的分片会在下一轮补齐。</p>
+      </section>
+    </div>
+    <footer><p><b>如何接收</b> 打开 OfflineQR.exe → 选择摄像头 → 开始接收 → 完成后复制文字。</p><p>页面加载后可断网使用 · 请保持页面在前台 · 接收端显示校验通过，即传输完成</p></footer>
+    <noscript>此工具需要浏览器启用 JavaScript，所有处理均在本地完成。</noscript>
+  </main>
+</body>
+</html>
